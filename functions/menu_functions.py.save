@@ -1,0 +1,35 @@
+
+import board
+import digitalio
+from PIL import Image, ImageDraw, ImageFont
+import adafruit_ssd1306
+
+def start_menu(draw, font, oled):
+	draw.text((0,0), "> Gotowe drinki", font=font, fill=255)
+	draw.text((0,25), "> Stwórz drinka", font=font, fill=255)
+	draw.text((45,50), "Odpowietrzanie <", font=font, fill=255)
+	oled.show()
+
+def fun_power_off(oled):
+	oled.fill(0)
+	oled.show()
+	print('Faza bezczynności - ekran wyłączony')
+
+def fun_power_on(draw, font, oled):
+	image = Image.new("1", (oled.width, oled.height))
+	draw = ImageDraw.Draw(image)
+	draw.text((0,0), "> Gotowe drinki", font=font, fill=255)
+	draw.text((0,25), "> Stwórz drinka", font=font, fill=255)
+	draw.text((45,50), "Odpowietrzanie <", font=font, fill=255)
+	oled.image(image)
+	oled.show()
+	del image
+	del draw
+	del font
+
+def fun_startup(oled):
+	font = font = ImageFont.truetype("/usr/share/fonts/truetype/quicksand/Quicksand-Bold.ttf", 10)
+
+	image = Image.new("1", (oled.width, oled.height))
+	draw = ImageDraw.Draw(image)
+	draw.text((64, 45), "SMART BARTENER  🍷"

@@ -1,0 +1,121 @@
+{ "drinks": [
+	{"name":"Paradise Bay"
+	},
+	{"name":"Kamikadze"
+	},
+	{"name":"Zielona ropucha"
+	},
+	{"name":"Whiskey sour"
+	},
+	{"name":"Whiskey z cola"
+	},
+	{"name":"Whiting sunset"
+	},
+	{"name":"Screwdriver"
+	},
+	{"name":"Mir"
+	},
+	{"name":"Red Rasputin"
+	},
+	{"name":"Cuba Libre"
+	}],
+"alcohols": [
+	{"name":"Whiskey"},
+	{"name":"Cola"},
+	{"name":"Biała wódka"},
+	{"name":"Rum biały"},
+	{"name":"Blue Curacao"},
+	{"name":"Sok z cytryny"},
+	{"name":"Grenadyna"},
+	{"name":"Sok pomarańczowy"}],
+"paradise bay":	[
+	{"whiskey":"0"},
+	{"cola":"0"},
+	{"white_vodka":"50"},
+	{"white_rum":"0"},
+	{"blue_curacao":"50"},
+	{"lemon":"50"},
+	{"grenadine":"0"},
+	{"orange":"0"}],
+"kamikadze": [
+	{"whiskey":"0"},
+	{"cola":"0"},
+	{"white_vodka":"50"},
+	{"white_rum":"0"},
+	{"blue_curacao":"50"},
+	{"lemon":"50"},
+	{"grenadine":"0"},
+	{"orange":"0"}],
+"zielona ropucha": [
+        {"whiskey":"0"},
+        {"cola":"0"},
+        {"white_vodka":"60"},
+        {"white_rum":"0"},
+        {"blue_curacao":"50"},
+        {"lemon":"0"},
+        {"grenadine":"0"},
+        {"orange":"170"}],
+"whiting sunset": [
+        {"whiskey":"0"},
+        {"cola":"0"},
+        {"white_vodka":"60"},
+        {"white_rum":"30"},
+        {"blue_curacao":"0"},
+        {"lemon":"0"},
+        {"grenadine":"20"},
+        {"orange":"180"}],
+"screwdriver": [
+        {"whiskey":"0"},
+        {"cola":"30"},
+        {"white_vodka":"60"},
+        {"white_rum":"0"},
+        {"blue_curacao":"0"},
+        {"lemon":"50"},
+        {"grenadine":"0"},
+        {"orange":"120"}],
+"whiskey z cola": [
+        {"whiskey":"50"},
+        {"cola":"150"},
+        {"white_vodka":"0"},
+        {"white_rum":"0"},
+        {"blue_curacao":"0"},
+        {"lemon":"0"},
+        {"grenadine":"0"},
+        {"orange":"0"}],
+"whiskey sour": [
+        {"whiskey":"100"},
+        {"cola":"130"},
+        {"white_vodka":"0"},
+        {"white_rum":"0"},
+        {"blue_curacao":"0"},
+        {"lemon":"15"},
+        {"grenadine":"0"},
+        {"orange":"0"}],
+"mir": [
+        {"whiskey":"30"},
+        {"cola":"150"},
+        {"white_vodka":"30"},
+        {"white_rum":"0"},
+        {"blue_curacao":"0"},
+        {"lemon":"0"},
+        {"grenadine":"0"},
+        {"orange":"0"}],
+"red rasputin": [
+        {"whiskey":"0"},
+        {"cola":"100"},
+        {"white_vodka":"50"},
+        {"white_rum":"0"},
+        {"blue_curacao":"0"},
+        {"lemon":"0"},
+        {"grenadine":"25"},
+        {"orange":"0"}],
+"cuba libre": [
+        {"whiskey":"0"},
+        {"cola":"150"},
+        {"white_vodka":"0"},
+        {"white_rum":"60"},
+        {"blue_curacao":"0"},
+        {"lemon":"30"},
+        {"grenadine":"0"},
+        {"orange":"0"}]
+}

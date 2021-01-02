@@ -1,0 +1,17 @@
+from modules.menu import Menu
+from modules.button_events import button_thread
+from modules.inactivity import Inactivity
+
+class Controller:
+	def __init__(self, draw, font, oled):
+		print('Uruchomiono główny kontroller')
+		self.draw = draw
+		self.font = font
+		self.oled = oled
+		self.menu = Menu(draw, font, oled, self.inactivity_controller
+		self.events_thread = button_thread(self.menu)
+		self.events_thread.start()
+		self.inactivity_controller = Inactivity(self.menu, self.oled)
+		self.inactivity_controller.start()
+		                self.inactivity_controller.start()
+

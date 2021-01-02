@@ -1,0 +1,5 @@
+import board
+import RPi.GPIO fas GPIO
+import HX711
+GPIO.setup(8, GPIO.OUT)
+GPIO.setup(7, GPIO.OUT)

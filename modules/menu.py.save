@@ -1,0 +1,59 @@
+from functions.menu_functions import *
+import time
+class Menu:
+	def __init__(self,font, oled, drinks_data, led_controller):
+		print('Uruchomiono kontroler menu')
+		self.led_controller = led_controller
+		self.menu_state = 'startup'
+		self.font = font
+		self.oled = oled
+		self.drinks_data = drinks_data
+		self.drinks_list = []
+		self.fill_list(self)
+		fun_startup(self.oled)
+		time.sleep(2)
+		start_menu(self.font, self.oled)
+		self.global_iterator = 0
+		self.current_drink = ""
+
+	def fill_list(self, x):
+		iterator = 0
+		for item in self.drinks_data['drinks']:
+			temp = item['name']
+			self.drinks_list.append(temp)
+
+	def power_off(self):
+		self.menu_state = 'power_off'
+		fun_power_off(self.oled)
+
+	def get_state(self):
+		return self.menu_state
+
+	def power_on(self):
+		self.menu_state = 'startup'
+		fun_power_on(self.font, self.oled)
+
+	def choose_drink(self):
+		self.menu_state = 'choosing_drink'
+
+	def show_drink(self):
+		if self.global_iterator == len(self.drinks_list):
+			self.global_iterator = 0
+		fun_change_drink(self.oled, self.font, self.drinks_list[self.global_iterator])
+		print(self.drinks_list[self.global_iterator])
+		self.current_drink = self.drinks_list[self.global_iterator]
+		self.global_iterator = self.global_iterator +1
+
+	def get_current_drink(self):
+		return self.current_drink
+
+	def make_drink(self):
+		fun_making_drink(self.oled, self.font, self.current_drink)
+		self.led_controller.working(self.current_drink.lower())
+		time.sleep(10)
+		self.led_controller.go_back(self)
+		#Można zrobić tutaj progress-bar. Zobaczymy.
+		#Światełka - start
+		#Procedura nalewania
+		#Zmiana na wyświetlaczu
+		#światełka w pozycji jałowej
