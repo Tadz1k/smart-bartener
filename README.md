@@ -33,5 +33,7 @@ List of drinks available by default:
 	}],
   ```
   
+  Json file with drinks and receipts is in `drinks` directory.
+  
   
 The project was used successfully during the New Year's party.
