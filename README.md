@@ -37,3 +37,6 @@ List of drinks available by default:
   
   
 The project was used successfully during the New Year's party.
+
+Presentation in ugliest way : 
+https://www.youtube.com/watch?v=-eIHzyuFaQM
